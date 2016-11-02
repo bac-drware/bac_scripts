@@ -18,8 +18,8 @@ then
 else
    echo "File $FILE does not exist."
    curl -s \
-     -F "token=avrzhw3FU38pQ5PXefRyvDBwXo4vEW" \
-     -F "user=ZTSGV9hpf8FoqDTkdPYrUD8zegRHJ4" \
+     -F "token=" \
+     -F "user=" \
      -F "message=Bind DNS is not running" \
      -F "priority=1" \
      -F "sound=gamelan" \
