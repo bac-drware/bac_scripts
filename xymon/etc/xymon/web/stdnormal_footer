@@ -1,0 +1,42 @@
+<BR><BR>
+
+<HR WIDTH="100%"> 
+
+<CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="silver">
+<BR />
+<A HREF="https://nav.bac.edu" style="text-decoration: none">Network Administrative Visualizer</A>
+<BR />
+<BR />
+</FONT>
+</CENTER>
+
+<TABLE SUMMARY="Bottomline" WIDTH="100%">
+<TR>
+  <TD> <HR WIDTH="100%"> </TD>
+</TR>
+<TR>
+  <TD ALIGN=RIGHT><FONT FACE="Arial, Helvetica" SIZE="-2" COLOR="silver"><B><A HREF="http://xymon.sourceforge.net/" style="text-decoration: none">Xymon &XYMONDREL</A></B></FONT></TD>
+</TR>
+</TABLE>
+
+&XYMONBODYFOOTER
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//uniform.bac.edu/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//uniform.bac.edu/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code DRW-->
+
+</BODY>
+</HTML>
