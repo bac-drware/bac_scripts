@@ -1,0 +1,87 @@
+;
+; BIND data file for bac.edu
+;
+;                                604800)        ; Default TTL
+;
+$TTL    259200
+@       IN      SOA     ns1.bac.edu. delta.bac.edu. (
+                            2016092801         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                  7200)        ; Default TTL
+;
+@       IN      NS      ns1.bac.edu.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1			IN	A	104.196.20.153
+bac.edu.		IN      MX      100     aspmx.l.google.com.
+bac.edu.		IN      MX      200     alt1.aspmx.l.google.com.
+bac.edu.		IN      MX      200     alt2.aspmx.l.google.com.
+bac.edu.		IN      MX      300     alt3.aspmx.l.google.com.
+bac.edu.		IN      MX      300     alt4.aspmx.l.google.com.
+bac.edu.		IN      A       184.168.47.225 
+barracuda81073353723    IN      CNAME   ess.barracuda.com.
+www                     IN      CNAME   bac.edu.
+canvas                  IN      CNAME   bac-vanity.instructure.com.
+surfer			IN	A	198.86.184.2
+vpn			IN	A	198.86.184.2
+public			IN	A	198.86.184.3
+reports                 IN      A       198.86.184.8
+files   		IN	CNAME	myfiles.bac.edu.
+admin.files		IN	CNAME	myfiles.bac.edu.
+fac.files		IN	CNAME	myfiles.bac.edu.
+labstats		IN	A	198.86.184.19
+nav			IN	A	198.86.184.23
+outlook                 IN      A       198.86.184.33
+autodiscover		IN	CNAME	outlook.bac.edu.
+mail                    IN      A       198.86.184.33
+spreports		IN	A	198.86.184.42
+netpartner		IN	A	198.86.184.43
+facultyweb              IN      A       198.86.184.48
+abbeycrusader           IN      CNAME   facultyweb.bac.edu.
+agora                   IN      CNAME   facultyweb.bac.edu.
+myfiles 	        IN      A       198.86.184.66
+delta                   IN      A       198.86.184.105
+support                 IN      A       198.86.184.106
+abbey	                IN      CNAME   support.bac.edu.
+arc	                IN      CNAME   support.bac.edu.
+clientsupport           IN      CNAME   support.bac.edu.
+crusader                IN      CNAME   support.bac.edu.
+hintemeyer              IN      CNAME   support.bac.edu.
+itrc                    IN      CNAME   support.bac.edu.
+letmein                 IN      CNAME   support.bac.edu.
+myhousing               IN      CNAME   support.bac.edu.
+piwiki                  IN      CNAME   support.bac.edu.
+studentjobs             IN      CNAME   support.bac.edu.
+starfish                IN      CNAME   support.bac.edu.
+thehub                  IN      CNAME   support.bac.edu.
+wellnesscenter          IN      CNAME   support.bac.edu.
+alertus                 IN      A       198.86.184.108
+selfservice             IN      A       198.86.184.111
+myabbey                 IN      CNAME   selfservice.bac.edu.
+papercut                IN      A       198.86.184.113
+spiceworks              IN      A       198.86.184.114
+helpdesk		IN	A	198.86.184.115
+passwordreset		IN	A	198.86.184.117
+bac-dc-rsh		IN	A	198.86.184.118
+desktop 		IN	A	198.86.184.120
+uniform			IN	A	198.86.184.123
+myargos			IN	A	198.86.184.124
+libraryaccess		IN	A	198.86.184.124
+rews                    IN      A       198.86.184.20
+testss  		IN	A	198.86.184.91
+testchp 		IN	CNAME	testss.bac.edu.
+testssrs		IN	A	198.86.184.92
+testapps		IN	A	198.86.184.90
+serapammon		IN	A	198.86.184.90
+theabbeycrusader	IN	A	72.32.209.42
+gmail			IN	CNAME	ghs.google.com.
+s			IN	CNAME	ghs.google.com.
+webmail			IN	CNAME	ghs.google.com.
+bac.edu.		IN      TXT     "v=spf1 a mx ip4:216.248.198.186 ip4:198.86.184.33 ip4:72.32.209.42 ip4:75.126.123.184 ip4:142.0.176.137 ip4:142.0.176.151 ip4:142.0.176.222 ip4:142.0.180.198 include:spf.dynect.net include:outboundmail.convio.net include:aspmx.googlemail.com ~all"
+convio1.domainkey	IN	TXT	"t=y\; k=rsa\; p=mfwwdqyjkozihvcnaqebbqadswawsajbakktppxbndv+hpwgvxoeshvmynnhypuqio7umzoft+cyynqq9j7wpitohqabxten4igg8ztezob6z69jpd5osn0caweaaq=="
+
+123059_7fd36bf4d84a1dc3876f3136fddc50b3._domainkey	IN	TXT	"k=rsa\; t=y\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTvOxuhR3lYYwWpBwnFYT0OJ7Vi4IbHTDX6TDmACvbfOBjf0BqamyyJQ/QjcT52Fm/ZotoI3prf8B1aaSqvLOLhhr6q8cpVLE+hbgk56YC76CVQJP5USDEPXBKc61dFRH4bislDWs1YQJD8FDet4bzfUecCNdp/djTuquLbNQddwIDAQAB"
+_domainkey	IN	TXT	"t=y\; o=~\;"

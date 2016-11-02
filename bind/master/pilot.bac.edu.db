@@ -1,0 +1,40 @@
+;
+; BIND data file for pilot.bac.edu
+;
+;                                604800)        ; Default TTL
+;
+$TTL    604800
+@       IN      SOA     ns1.pilot.bac.edu. ns1.bac.edu. (
+                            2013062401         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                604800)        ; Default TTL
+;
+@       IN      NS      ns1.pilot.bac.edu.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1                     IN      A       198.86.184.105
+pilot.bac.edu.		IN	A	198.86.184.106	
+pilot.bac.edu.		IN      MX      10      aspmx.l.google.com.
+pilot.bac.edu.		IN      MX      20      alt1.aspmx.l.google.com.
+pilot.bac.edu.		IN      MX      20      alt2.aspmx.l.google.com.
+pilot.bac.edu.		IN      MX      30      aspmx2.googlemail.com.
+pilot.bac.edu.		IN      MX      30      aspmx3.googlemail.com.
+pilot.bac.edu.		IN      MX      30      aspmx4.googlemail.com.
+pilot.bac.edu.		IN      MX      30      aspmx5.googlemail.com.
+calendar                IN      CNAME   ghs.google.com.
+docs 	                IN      CNAME   ghs.google.com.
+gmail	                IN      CNAME   ghs.google.com.
+groups                  IN      CNAME   ghs.google.com.
+mail    	        IN      CNAME   ghs.google.com.
+moderator               IN      CNAME   ghs.google.com.
+s   		   	IN      CNAME   ghs.google.com.
+shortlinks              IN      CNAME   ghs.google.com.
+sites                   IN      CNAME   ghs.google.com.
+users                   IN      CNAME   ghs.google.com.
+video                   IN      CNAME   ghs.google.com.
+wave                    IN      CNAME   ghs.google.com.
+webmail                 IN      CNAME   ghs.google.com.
+pilot.bac.edu.		IN      TXT     "v=spf1 mx includes:aspmx.googlemail.com ~all"

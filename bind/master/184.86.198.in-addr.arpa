@@ -1,0 +1,26 @@
+$TTL 300 ;
+$ORIGIN 184.86.198.IN-ADDR.ARPA.
+@       IN      SOA     ns1.bac.edu   delta.bac.edu. (
+                        2014041001         ; Serial
+                              7200         ; Refresh
+                               120         ; Retry
+                           2419200         ; Expire
+                             86400         ; Default TTL
+)
+184.86.198.in-addr.arpa.        IN      NS      ns1.bac.edu.
+2	IN	PTR	surfer.bac.edu.
+3	IN	PTR	public.bac.edu.
+7	IN	PTR	post.bac.edu.
+8	IN	PTR	reports.bac.edu.
+11	IN	PTR	files.bac.edu.
+12	IN	PTR	facultyweb.bac.edu.
+15	IN	PTR	support.bac.edu.
+19	IN	PTR	labstats.bac.edu.
+31	IN	PTR	desktop.bac.edu.
+33	IN	PTR	mail.bac.edu.
+42	IN	PTR	spreports.bac.edu.
+48	IN	PTR	facultyweb.bac.edu.
+105	IN	PTR	ns1.bac.edu.
+106	IN	PTR	support.bac.edu.
+111	IN	PTR	selfservice.bac.edu.
+124	IN	PTR	libraryaccess.bac.edu.

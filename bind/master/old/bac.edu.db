@@ -1,0 +1,68 @@
+;
+; BIND data file for bac.edu
+;
+;                                604800)        ; Default TTL
+;
+;$TTL    86400
+@       IN      SOA     ns1.bac.edu. netsaint.bac.edu. (
+                            2012101102         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                 86400)        ; Default TTL
+;
+@       IN      NS      ns1.bac.edu.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1			IN	A	198.86.184.105
+bac.edu.		IN      MX      100     bac.edu.s9a1.psmtp.com.
+bac.edu.		IN      MX      200     bac.edu.s9a2.psmtp.com.
+bac.edu.		IN      MX      300     bac.edu.s9b1.psmtp.com.
+bac.edu.		IN      MX      400     bac.edu.s9b2.psmtp.com.
+bac.edu.		IN      MX      900     outlook.bac.edu.
+bac.edu.		IN      A       72.32.209.42
+www                     IN      CNAME   bac.edu.
+surfer			IN	A	198.86.184.2
+vpn			IN	A	198.86.184.2
+;webaccess		IN	A	198.86.184.5
+outlook                 IN      A       198.86.184.7
+mail                    IN      A       198.86.184.7
+files			IN	A	198.86.184.11
+;admin.files		IN	CNAME	files.bac.edu.
+;fac.files		IN	CNAME	files.bac.edu.
+;labstats		IN	A	198.86.184.19
+;netsaint		IN	A	198.86.184.23
+;portal			IN	A	198.86.184.23
+;damian			IN	A	198.86.184.30
+desktop 		IN	A	198.86.184.31
+;donato  		IN	A	198.86.184.32
+facultyweb              IN      A       198.86.184.48
+abbeycrusader           IN      CNAME   facultyweb.bac.edu.
+agora                   IN      CNAME   facultyweb.bac.edu.
+rews                    IN      A       198.86.184.101
+;tango			IN	A	198.86.184.104
+;delta			IN	A	198.86.184.105
+;itrc                    IN      A       198.86.184.106
+;abbey                   IN      A       198.86.184.106
+support                 IN      A       198.86.184.106
+abbey	                IN      CNAME   support.bac.edu.
+arc	                IN      CNAME   support.bac.edu.
+clientsupport           IN      CNAME   support.bac.edu.
+hintemeyer              IN      CNAME   support.bac.edu.
+itrc                    IN      CNAME   support.bac.edu.
+piwiki                  IN      CNAME   support.bac.edu.
+studentjobs             IN      CNAME   support.bac.edu.
+wellnesscenter          IN      CNAME   support.bac.edu.
+libraryaccess		IN	A	198.86.184.107
+selfservice             IN      A       198.86.184.111
+uniform			IN	A	198.86.184.123
+myargos			IN	A	198.86.184.124
+crusader		IN	A	24.172.71.237
+theabbeycrusader	IN	A	72.32.209.42
+gmail			IN	CNAME	ghs.google.com.
+s			IN	CNAME	ghs.google.com.
+webmail			IN	CNAME	ghs.google.com.
+bac.edu.		IN      TXT     "v=spf1 mx ip4:74.125.148.0/22 ip4:72.32.209.42 include:outboundmail.convio.net include:aspmx.googlemail.com ~all"
+;bac.edu.		IN      TXT     "v=spf1 a mx ip4:198.68.184.0/24 ip4:72.32.209.42 ip4:64.95.72.241 mx:mail.bac.edu include:outboundmail.convio.net include:aspmx.googlemail.com ~all"
+convio1.domainkey	IN	TXT	"t=y\; k=rsa\; p=mfwwdqyjkozihvcnaqebbqadswawsajbakktppxbndv+hpwgvxoeshvmynnhypuqio7umzoft+cyynqq9j7wpitohqabxten4igg8ztezob6z69jpd5osn0caweaaq=="

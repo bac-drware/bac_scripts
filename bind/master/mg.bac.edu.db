@@ -1,0 +1,32 @@
+;
+; BIND data file for mg.bac.edu
+;
+;                                604800)        ; Default TTL
+;
+$TTL    604800
+@       IN      SOA     ns1.mg.bac.edu. ns1.bac.edu. (
+                            2013062401         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                604800)        ; Default TTL
+;
+@       IN      NS      ns1.mg.bac.edu.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1                     IN      A       198.86.184.105
+mg.bac.edu.		IN	A	198.86.184.106	
+mg.bac.edu.		IN      MX      10      aspmx.l.google.com.
+mg.bac.edu.		IN      MX      20      alt1.aspmx.l.google.com.
+mg.bac.edu.		IN      MX      20      alt2.aspmx.l.google.com.
+mg.bac.edu.		IN      MX      30      aspmx2.googlemail.com.
+mg.bac.edu.		IN      MX      30      aspmx3.googlemail.com.
+mg.bac.edu.		IN      MX      30      aspmx4.googlemail.com.
+mg.bac.edu.		IN      MX      30      aspmx5.googlemail.com.
+www                     IN      CNAME   bac.edu.
+mg.bac.edu.		IN	TXT	"v=spf1 Include:mailgun.org ~all"
+smtp._domainkey.mg.bac.edu	IN	TXT	"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqfokp3tQIKQU619zMjdxjALMOVjEUzw/R29fMCrecfeRlkGoiU+Ix8zrv2xoJSDcV/5gz1FdDjUDckQSypaY9gGl7hx7/vpuuDv8NzdM4rConHwrm7V1m+cmSHLV1Jl3XxNmJGCDZ7n6Xicw2AXa6aAqNdxnEt1LEaajY1cXjFwIDAQAB"
+
+
+

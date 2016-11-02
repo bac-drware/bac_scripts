@@ -1,0 +1,56 @@
+;
+; BIND data file for bac.edu
+;
+;                                604800)        ; Default TTL
+;
+$TTL    86400
+@       IN      SOA     ns1.bac.edu. netsaint.bac.edu. (
+                            2011091601         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                   300)        ; Default TTL
+;
+@       IN      NS      ns1.bac.edu.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1			IN	A	198.86.184.23
+bac.edu.		IN      MX      10      mail.bac.edu.
+bac.edu.		IN      A       72.32.209.42
+www                     IN      CNAME   bac.edu.
+surfer			IN	A	198.86.184.2
+webaccess		IN	A	198.86.184.5
+mail                    IN      A       198.86.184.10
+facultyweb              IN      A       198.86.184.12
+abbeycrusader           IN      CNAME   facultyweb.bac.edu.
+agora                   IN      CNAME   facultyweb.bac.edu.
+labstats		IN	A	198.86.184.19
+netsaint		IN	A	198.86.184.23
+bravo                   IN      A       198.86.184.106
+clientsupport           IN      CNAME   bravo.bac.edu.
+piwiki                  IN      CNAME   bravo.bac.edu.
+studentjobs             IN      CNAME   bravo.bac.edu.
+support                 IN      CNAME   bravo.bac.edu.
+tango			IN	A	198.86.184.104
+libraryaccess		IN	A	198.86.184.107
+november		IN	A	198.86.184.109
+charlie			IN	A	198.86.184.110
+myabbey			IN	A	198.86.184.110
+zulu                    IN      A       198.86.184.111
+selfservice             IN      A       198.86.184.111 
+whiskey                 IN      A       198.86.184.112
+coursehomepage          IN      A       198.86.184.112
+iam			IN	A	198.86.184.122
+files			IN	A	198.86.184.11
+admin.files		IN	CNAME	files.bac.edu.
+;admin.files		IN	A	198.86.184.11
+fac.files		IN	CNAME	files.bac.edu.
+;fac.files		IN	A	198.86.184.20
+crusader		IN	A	24.172.71.237
+theabbeycrusader	IN	A	72.32.209.42
+gmail			IN	CNAME	ghs.google.com.
+s			IN	CNAME	ghs.google.com.
+webmail			IN	CNAME	ghs.google.com.
+bac.edu.		IN      TXT     "v=spf1 a mx ip4:198.68.184.0/24 ip4:72.32.209.42 ip4:64.95.72.241 include:outboundmail.convio.net -all"
+convio1.domainkey	IN	TXT	"t=y\; k=rsa\; p=mfwwdqyjkozihvcnaqebbqadswawsajbakktppxbndv+hpwgvxoeshvmynnhypuqio7umzoft+cyynqq9j7wpitohqabxten4igg8ztezob6z69jpd5osn0caweaaq=="
