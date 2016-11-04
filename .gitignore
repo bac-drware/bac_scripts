@@ -1,6 +1,6 @@
-/admin_username.text
-/admin_password.text
-/*.text
+admin_username.text
+admin_password.text
+*.text
 backups/
 logs/
 xymonpasswd
