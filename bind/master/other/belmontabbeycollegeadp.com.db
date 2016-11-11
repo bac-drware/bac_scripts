@@ -1,0 +1,20 @@
+;
+; BIND data file for belmontabbeycollegeadp.com
+;
+;                                604800)        ; Default TTL
+;
+$TTL    604800
+@       IN      SOA     ns1.belmontabbeycollegeadp.com. ns1.bac.edu. (
+                            2016111101         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                604800)        ; Default TTL
+;
+@       IN      NS      ns1.belmontabbeycollegeadp.comorg.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1                     IN      A       198.86.184.105
+belmontabbeycollegeadp.com.	IN	A	64.13.232.197	
+www			IN	CNAME	belmontabbeycollegeadp.com.

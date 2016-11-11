@@ -1,0 +1,227 @@
+//
+// Do any local configuration here
+//
+
+//       allow-transfer { 192.101.21.1;128.109.131.3;128.109.249.27; };
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "bac.edu" {
+       type master;
+       file "/etc/bind/zones/master/bac.edu.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "abbey.bac.edu" {
+       type master;
+       file "/etc/bind/zones/master/abbey.bac.edu.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "alumni.bac.edu" {
+       type master;
+       file "/etc/bind/zones/master/alumni.bac.edu.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+
+zone "pilot.bac.edu" {
+       type master;
+       file "/etc/bind/zones/master/pilot.bac.edu.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "1minutemonk.com" {
+       type master;
+       file "/etc/bind/zones/master/other/1minutemonk.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "oneminutemonk.com" {
+       type master;
+       file "/etc/bind/zones/master/other/oneminutemonk.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "oneminutemonk.net" {
+       type master;
+       file "/etc/bind/zones/master/other/oneminutemonk.net.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "abbeyhonorsinstitute.com" {
+       type master;
+       file "/etc/bind/zones/master/other/abbeyhonorsinstitute.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "bacadultdegree.com" {
+       type master;
+       file "/etc/bind/zones/master/other/bacadultdegree.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "bacmylife.com" {
+       type master;
+       file "/etc/bind/zones/master/other/bacmylife.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "belmontabbey.org" {
+       type master;
+       file "/etc/bind/zones/master/other/belmontabbey.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "belmontabbeycollege.edu" {
+       type master;
+       file "/etc/bind/zones/master/other/belmontabbeycollege.edu.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "belmontabbeycollegeadp.com" {
+       type master;
+       file "/etc/bind/zones/master/other/belmontabbeycollegeadp.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "bacroads.com" {
+       type master;
+       file "/etc/bind/zones/master/other/bacroads.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "gotmonks.com" {
+       type master;
+       file "/etc/bind/zones/master/other/gotmonks.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "gotmonks.net" {
+       type master;
+       file "/etc/bind/zones/master/other/gotmonks.net.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportmanagement.org" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportmanagement.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportmanagement.us" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportmanagement.us.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportprogram.com" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportprogram.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportprogram.org" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportprogram.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsdegree.com" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsdegree.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsdegree.net" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsdegree.net.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsdegree.org" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsdegree.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsmanagement.org" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsmanagement.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsmanagement.us" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsmanagement.us.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsprogram.com" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsprogram.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "motorsportsprogram.org" {
+       type master;
+       file "/etc/bind/zones/master/other/motorsportsprogram.org.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "lessthanaminutetogo.com" {
+       type master;
+       file "/etc/bind/zones/master/other/lessthanaminutetogo.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+zone "reclaimthegame.com" {
+       type master;
+       file "/etc/bind/zones/master/other/reclaimthegame.com.db";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};
+
+// zone "161.218.74.in-addr.arpa" {
+//        type master;
+//        file "/etc/bind/zones/master/161.218.74.in-addr.arpa";
+//        allow-transfer { NCREN; };
+//        allow-query { any; };
+// };
+
+zone "184.86.198.in-addr.arpa" {
+       type master;
+       file "/etc/bind/zones/master/184.86.198.in-addr.arpa";
+       allow-transfer { NCREN; };
+       allow-query { any; };
+};

@@ -1,0 +1,20 @@
+;
+; BIND data file for gotmonks.net
+;
+;                                604800)        ; Default TTL
+;
+$TTL    604800
+@       IN      SOA     ns1.gotmonks.net. ns1.bac.edu. (
+                            2016111101         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                604800)        ; Default TTL
+;
+@       IN      NS      ns1.gotmonks.net.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1                     IN      A       198.86.184.105
+gotmonks.net.	IN	A	72.32.209.42	
+www			IN	CNAME	gotmonks.net.

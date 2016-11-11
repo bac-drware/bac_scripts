@@ -1,0 +1,20 @@
+;
+; BIND data file for motorsportsdegree.net
+;
+;                                604800)        ; Default TTL
+;
+$TTL    604800
+@       IN      SOA     ns1.motorsportsdegree.net. ns1.bac.edu. (
+                            2016111101         ; Serial
+                                  7200         ; Refresh
+                                   120         ; Retry
+                               2419200         ; Expire
+                                604800)        ; Default TTL
+;
+@       IN      NS      ns1.motorsportsdegree.net.
+@       IN      NS      ncnoc.ncren.net.
+@       IN      NS      chlt-ns1.ncren.net.
+@       IN      NS      reggae.ncren.net.
+ns1                     IN      A       198.86.184.105
+motorsportsdegree.net.	IN	A	184.168.47.225	
+www			IN	CNAME	motorsportsdegree.net.
